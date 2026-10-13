@@ -1,4 +1,3 @@
-# FlowState
 
 # FlowState — Mobil Görev Yönetimi Uygulaması
 
