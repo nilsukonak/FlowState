@@ -35,12 +35,11 @@ Uygulama; Flutter ve Dart kullanılarak oluşturulmuş, Firebase servisleriyle d
 
 Projenin geliştirilmesi sırasında yalnızca kullanıcı arayüzüne değil; veri yönetimine, uygulama mimarisine, kimlik doğrulama akışlarına, bildirim zamanlamasına ve hata ayıklama süreçlerine de odaklanılmıştır.
 
-### 🎯 Projenin Amaçları
+###  Projenin Amaçları
 
 - Günlük görevlerin tek bir yerden yönetilebilmesini sağlamak.
 - Görevlerin tamamlanma durumlarını ve önceliklerini takip etmek.
 - Kullanıcı hesaplarını Firebase üzerinden yönetmek.
-- Görev verilerini bulut tabanlı bir veritabanında saklamak.
 - Uygulama durumunu merkezi ve sürdürülebilir biçimde yönetmek.
 - Görevler için zamanlanmış yerel hatırlatıcılar oluşturmak.
 - Gerçek bir mobil uygulama projesinde karşılaşılabilecek mimari, yapılandırma ve hata ayıklama süreçlerini uygulamak.
@@ -63,9 +62,9 @@ Projenin geliştirilmesi sırasında yalnızca kullanıcı arayüzüne değil; v
 
 **Not:** `dashboard.png` ve `theme.png` gibi dosyaları henüz oluşturmadıysan ilgili görselleri ekleyene kadar bu satırları kaldırabilir veya daha sonra tamamlayabilirsin. README'de yalnızca uygulamada gerçekten bulunan ekranları sergile.
 
-## ✨ Özellikler
+##  Özellikler
 
-### 🔐 Kimlik Doğrulama ve Hesap Yönetimi
+###  Kimlik Doğrulama ve Hesap Yönetimi
 
 - Firebase Authentication ile e-posta ve parola üzerinden kullanıcı doğrulama.
 - Yeni kullanıcı hesabı oluşturma ve giriş yapma akışları.
@@ -73,10 +72,9 @@ Projenin geliştirilmesi sırasında yalnızca kullanıcı arayüzüne değil; v
 - Google ile oturum açma entegrasyonu.
 - Kullanıcıya ait verilerin Firebase kullanıcı kimliği (UID) üzerinden ayrıştırılması.
 
-### 🗂️ Görev Yönetimi
+###  Görev Yönetimi
 
-- Yeni görev oluşturma.
-- Mevcut görevleri düzenleme.
+- Yeni görev oluşturma ve düzenleme.
 - Görevleri silme.
 - Görevlerin tamamlanma durumunu değiştirme.
 - Görevlere başlık ve açıklama ekleme.
@@ -85,14 +83,14 @@ Projenin geliştirilmesi sırasında yalnızca kullanıcı arayüzüne değil; v
 - Kategori bilgileriyle görevleri düzenleme.
 - Görev durumlarına göre listeleri filtreleme.
 
-### 🔎 Arama ve Filtreleme
+### Arama ve Filtreleme
 
 - Görevler arasında arama yapma.
 - Arama alanındaki metni temizleme.
 - Arama metni bulunduğunda temizleme kontrolünü gösterme.
 - Tüm görevleri, aktif görevleri ve tamamlanmış görevleri ayrı görüntüleme.
 
-### 📊 Dashboard ve İlerleme Takibi
+### Dashboard ve İlerleme Takibi
 
 Görev verilerinden elde edilen özet bilgiler aracılığıyla kullanıcının görev durumunu takip etmesi hedeflenir.
 
@@ -103,7 +101,7 @@ Görev verilerinden elde edilen özet bilgiler aracılığıyla kullanıcının 
 
 Bu değerler görev verileri üzerinden hesaplanır; görevler güncellendiğinde özetin de güncel durumu yansıtması amaçlanır.
 
-### 🔔 Yerel Bildirimler ve Görev Hatırlatıcıları
+###  Yerel Bildirimler ve Görev Hatırlatıcıları
 
 Uygulamaya `flutter_local_notifications` ve `timezone` paketleriyle yerel bildirim altyapısı eklenmiştir.
 
@@ -116,7 +114,7 @@ Uygulamaya `flutter_local_notifications` ve `timezone` paketleriyle yerel bildir
 
 Bildirimlerin gerçek cihazdaki davranışı Android sürümüne, izinlere, pil optimizasyonlarına ve cihaz üreticisinin arka plan kısıtlamalarına bağlı olabilir. Kesin dakikada teslimat tüm cihazlarda garanti edilmez.
 
-### 🎨 Arayüz ve Kullanıcı Deneyimi
+###  Arayüz ve Kullanıcı Deneyimi
 
 - Flutter ile oluşturulmuş mobil kullanıcı arayüzü.
 - Provider üzerinden tema durumunun yönetilmesi.
@@ -125,7 +123,7 @@ Bildirimlerin gerçek cihazdaki davranışı Android sürümüne, izinlere, pil 
 - Görev oluşturma ve düzenleme için ayrı ekran akışları.
 - FlowState adı ve görsel kimliğiyle uygulamanın yeniden düzenlenmesi.
 
-### ☁️ Bulut Tabanlı Veri Yönetimi
+###  Bulut Tabanlı Veri Yönetimi
 
 - Firebase Cloud Firestore ile görev verilerinin saklanması.
 - Görevler için ekleme, okuma, güncelleme ve silme işlemleri (CRUD).
@@ -133,18 +131,17 @@ Bildirimlerin gerçek cihazdaki davranışı Android sürümüne, izinlere, pil 
 - Kullanıcı kimliğine bağlı veri yönetimi.
 - Provider üzerinden uygulama durumunun ve görev verilerinin yönetilmesi.
 
-### 🧰 Uygulama Altyapısı ve Hata Ayıklama
+### Uygulama Altyapısı ve Hata Ayıklama
 
 Geliştirme sürecinde yalnızca özellik eklemeye değil, uygulamanın yapılandırmasına ve farklı bileşenlerin birlikte çalışmasına da odaklanılmıştır.
 
 - Flutter paketlerinin ve bağımlılıklarının yönetilmesi.
 - Android yapılandırmasının bildirim paketleriyle uyumlu hâle getirilmesi.
 - Bildirim zamanlamasında tarih formatından kaynaklanan hatanın giderilmesi.
-- Görev tarihinin `d/M/yyyy` formatından güvenli biçimde `DateTime` değerine dönüştürülmesi.
 - Bildirimlerin uygulama kapalıyken de planlanan şekilde çalışıp çalışmadığının test edilmesi.
 - Android derleme ve paket yapılandırması sorunlarının incelenmesi.
 
-## 🛠️ Teknolojiler
+##  Teknolojiler
 
 | Teknoloji / Paket | Kullanım amacı |
 |---|---|
@@ -165,7 +162,7 @@ Geliştirme sürecinde yalnızca özellik eklemeye değil, uygulamanın yapılan
 
 > Listelenen paketlerin projedeki gerçek kullanım kapsamı kaynak koduna bağlıdır. Yerel depolama paketleri projede yer alsa da tüm görev verilerinin Hive veya SharedPreferences içinde tutulduğu anlamına gelmez; görev verileri için Cloud Firestore kullanılır.
 
-## 🏗️ Mimari ve Proje Yapısı
+## Mimari ve Proje Yapısı
 
 Proje; kullanıcı arayüzü, sağlayıcılar, yönlendirme, tema ve servis katmanlarının farklı sorumluluklar üstlendiği bir yapıyla düzenlenmiştir.
 
@@ -177,34 +174,8 @@ Proje; kullanıcı arayüzü, sağlayıcılar, yönlendirme, tema ve servis katm
 - **Firebase servisleri:** Kimlik doğrulama ve bulut veritabanı işlemlerini üstlenir.
 - **Notification Service:** Yerel bildirimlerin başlatılması, planlanması ve iptal edilmesi işlemlerini merkezileştirir.
 
-### Önemli klasörler
 
-```text
-lib/
-├── data/
-│   └── firebase_options.dart
-├── presentation/
-│   ├── providers/
-│   ├── routes/
-│   └── themes/
-└── services/
-    └── notification_service.dart
-
-assets/
-├── flowstate_logo.png
-└── flowstate_splash.png
-
-android/
-ios/
-screenshots/
-test/
-pubspec.yaml
-pubspec.lock
-```
-
-Bu şema projenin önemli bölümlerini gösteren özet bir yapıdır; tüm alt klasörleri ve dosyaları kapsamaz. `assets/flowstate_splash.png` dosyası kullanılmıyorsa klasör yapısında gösterilmemelidir.
-
-## ⚙️ Kurulum
+##  Kurulum
 
 ### Gereksinimler
 
@@ -215,71 +186,51 @@ Bu şema projenin önemli bölümlerini gösteren özet bir yapıdır; tüm alt 
 - Git.
 
 Flutter kurulumunun doğru yapıldığını kontrol etmek için:
-
 ```bash
 flutter doctor
 ```
-
 ### 1. Repoyu klonla
-
 Aşağıdaki adresi yeni FlowState reposunu oluşturduktan sonra onun gerçek URL'siyle değiştir:
-
 ```bash
 git clone https://github.com/USERNAME/FlowState.git
 cd FlowState
 ```
-
 ### 2. Paketleri yükle
-
 ```bash
 flutter pub get
 ```
-
 ### 3. Firebase yapılandırmasını tamamla
 
 Projeyi kendi Firebase projenle çalıştırmak için Android ve/veya iOS uygulama yapılandırmalarını tamamlaman gerekir.
-
 Firebase yapılandırmasının kullanılan FlutterFire sürümüne göre hazırlanması gerekebilir. Gerekli yapılandırma dosyalarını kendi Firebase projen üzerinden üret veya güncelle.
-
 Firebase istemci yapılandırma dosyaları tek başına sunucu erişim güvenliği sağlamaz. Firestore Security Rules, Authentication ve gerekli platform ayarları doğru yapılandırılmalıdır. Özel servis hesabı anahtarlarını, parolaları veya diğer gizli bilgileri depoya yükleme.
 
 ### 4. Android bildirim yapılandırmasını kontrol et
-
 Yerel bildirimlerin çalışabilmesi için Android izinleri, bildirim kanalları ve kullanılan eklentinin Android yapılandırması kontrol edilmelidir. Bazı Android sürümlerinde bildirim izni kullanıcıdan ayrıca istenir.
 
 ### 5. Uygulamayı çalıştır
-
 Bağlı cihazları listele:
-
 ```bash
 flutter devices
 ```
-
 Ardından:
-
 ```bash
 flutter run
 ```
-
 ### 6. Derleme sorunlarını giderme
-
 Bağımlılık veya derleme kaynaklı sorunlarda önce hata mesajının tamamını incele. Gerekirse:
-
 ```bash
 flutter clean
 flutter pub get
 flutter run
 ```
+Kullanılan Flutter SDK sürümünün ve Android SDK ayarlarının projedeki paketlerin gereksinimleriyle uyumlu olduğundan emin ol.Ben sdk = 36 kullandım.
 
-Kullanılan Flutter SDK sürümünün ve Android SDK ayarlarının projedeki paketlerin gereksinimleriyle uyumlu olduğundan emin ol.
-
-## 🔔 Bildirim Mantığı Hakkında
-
+##  Bildirim Mantığı Hakkında
 Görev hatırlatıcıları, görev tarihi ve belirlenen saatler üzerinden planlanır. Görev oluşturulduğunda veya tarihi değiştirildiğinde eski bildirimlerin tekrar değerlendirilmesi gerekir. Görev silindiğinde ilgili bildirimlerin iptal edilmesi de önemlidir.
-
 Bildirimler sunucu tarafından gönderilen push notification değildir; yerel cihazda planlanan bildirimlerdir. Bu nedenle uygulamanın Firebase üzerinden veri alması ile cihazın zamanlanmış bildirimi göstermesi birbirinden ayrı süreçlerdir.
 
-## 🧪 Test ve Doğrulama
+##  Test ve Doğrulama
 
 Projeyi geliştirirken özellikleri gerçek kullanım akışlarında kontrol etmek önemlidir.
 
@@ -294,16 +245,13 @@ Projeyi geliştirirken özellikleri gerçek kullanım akışlarında kontrol etm
 - Görev istatistiklerinin güncellenmesi.
 - Bildirim izinleri ve planlanan hatırlatıcılar.
 - Uygulama yeniden açıldığında verilerin tutarlılığı.
-
 Testleri çalıştırmak için:
-
 ```bash
 flutter test
 ```
-
 Bu komut mevcut testleri çalıştırır; testlerin tüm özellikleri kapsadığı veya hepsinin başarılı olduğu anlamına gelmez.
 
-## 🔒 Güvenlik ve Gizlilik
+##  Güvenlik ve Gizlilik
 
 - Firebase Authentication ile kullanıcı kimliği doğrulanmalıdır.
 - Firestore erişimi uygun Security Rules ile sınırlandırılmalıdır.
@@ -311,7 +259,7 @@ Bu komut mevcut testleri çalıştırır; testlerin tüm özellikleri kapsadığ
 - Gerçek kullanıcı verileri ve kişisel bilgiler ekran görüntülerinde paylaşılmamalıdır.
 - Örnek yapılandırmalar kullanılırken gerçek proje kimlik bilgileri korunmalıdır.
 
-## 🚀 Geliştirme Alanları
+## Geliştirme Alanları
 
 Projenin ilerleyen sürümlerinde değerlendirilebilecek geliştirmeler:
 
@@ -323,22 +271,7 @@ Projenin ilerleyen sürümlerinde değerlendirilebilecek geliştirmeler:
 
 Bunlar mevcut sürümde tamamlanmış özellikler değil, olası geliştirme alanlarıdır.
 
-## 🤝 Katkıda Bulunma
 
-Projeyi öğrenme amacıyla inceleyebilir, kendi geliştirme ortamında çalıştırabilir ve iyileştirme önerileri sunabilirsin.
-
-Katkı sunmak için:
-
-1. Repoyu fork'la.
-2. Yeni bir branch oluştur.
-3. Değişikliklerini uygula.
-4. Testlerini çalıştır.
-5. Açıklayıcı bir commit mesajıyla değişikliklerini kaydet.
-6. Pull request aç.
-
-## 📄 Lisans
-
-Projeye lisans eklemeden önce kullanılan kaynak kodun lisans koşullarını kontrol et. Bir lisans dosyası eklenmediyse bu depoya özel bir açık kaynak lisansı varmış gibi değerlendirme yapılmamalıdır.
 
 ---
 
@@ -421,10 +354,4 @@ FlowState uses local notifications scheduled on the device. Reminder delivery de
 
 Do not commit private service-account keys, passwords, or other secrets. Configure Firebase Authentication and Firestore Security Rules for your own Firebase project. Never include real user data in screenshots or example files.
 
-### Contributing
 
-Fork the repository, create a feature branch, implement and test your changes, and submit a pull request with a clear description.
-
-### License
-
-Check the applicable license terms before redistributing or modifying the original code. Do not assume an open-source license applies unless one is explicitly provided.
