@@ -44,7 +44,7 @@ Projenin geliştirilmesi sırasında yalnızca kullanıcı arayüzüne değil; v
 - Gerçek bir mobil uygulama projesinde karşılaşılabilecek mimari, yapılandırma ve hata ayıklama süreçlerini uygulamak.
 
 ## 📱 Ekran Görüntüleri
-![FlowState uygulamasının ekran görüntüleri](screenshots/screens.png)
+![FlowState uygulamasının ekran görüntüleri](screenshots/screens.jpg)
 
 
 ##  Özellikler
