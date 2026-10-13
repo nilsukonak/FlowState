@@ -27,7 +27,7 @@
 
 ---
 
-## 📌 Proje Hakkında
+## Proje Hakkında
 
 **FlowState**, kullanıcıların günlük görevlerini düzenlemelerine, önceliklendirmelerine ve ilerlemelerini takip etmelerine yardımcı olmak amacıyla geliştirilmiş bir mobil görev yönetimi uygulamasıdır.
 
