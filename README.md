@@ -44,22 +44,8 @@ Projenin geliştirilmesi sırasında yalnızca kullanıcı arayüzüne değil; v
 - Gerçek bir mobil uygulama projesinde karşılaşılabilecek mimari, yapılandırma ve hata ayıklama süreçlerini uygulamak.
 
 ## 📱 Ekran Görüntüleri
+![FlowState uygulamasının ekran görüntüleri](screenshots/screens.png)
 
-> Aşağıdaki dosya yollarını, `screenshots/` klasörüne ekleyeceğin gerçek uygulama ekran görüntülerinin adlarıyla eşleştir.
-
-| Giriş ve hesap işlemleri | Görev listesi |
-|---|---|
-| ![Giriş ekranı](screenshots/login.png) | ![Görev listesi](screenshots/task_list.png) |
-
-| Görev oluşturma | Görev düzenleme |
-|---|---|
-| ![Görev oluşturma ekranı](screenshots/add_task.png) | ![Görev düzenleme ekranı](screenshots/edit_task.png) |
-
-| Dashboard | Koyu ve açık tema |
-|---|---|
-| ![Dashboard ekranı](screenshots/dashboard.png) | ![Tema ekranı](screenshots/theme.png) |
-
-**Not:** `dashboard.png` ve `theme.png` gibi dosyaları henüz oluşturmadıysan ilgili görselleri ekleyene kadar bu satırları kaldırabilir veya daha sonra tamamlayabilirsin. README'de yalnızca uygulamada gerçekten bulunan ekranları sergile.
 
 ##  Özellikler
 
@@ -122,13 +108,6 @@ Bildirimlerin gerçek cihazdaki davranışı Android sürümüne, izinlere, pil 
 - Görev oluşturma ve düzenleme için ayrı ekran akışları.
 - FlowState adı ve görsel kimliğiyle uygulamanın yeniden düzenlenmesi.
 
-###  Bulut Tabanlı Veri Yönetimi
-
-- Firebase Cloud Firestore ile görev verilerinin saklanması.
-- Görevler için ekleme, okuma, güncelleme ve silme işlemleri (CRUD).
-- Repository Pattern ile veri erişim sorumluluklarının ayrıştırılması.
-- Kullanıcı kimliğine bağlı veri yönetimi.
-- Provider üzerinden uygulama durumunun ve görev verilerinin yönetilmesi.
 
 ### Uygulama Altyapısı ve Hata Ayıklama
 
@@ -191,7 +170,7 @@ flutter doctor
 ### 1. Repoyu klonla
 Aşağıdaki adresi yeni FlowState reposunu oluşturduktan sonra onun gerçek URL'siyle değiştir:
 ```bash
-git clone https://github.com/USERNAME/FlowState.git
+git clone https://github.com/nilsukonak/FlowState.git
 cd FlowState
 ```
 ### 2. Paketleri yükle
@@ -258,19 +237,6 @@ Bu komut mevcut testleri çalıştırır; testlerin tüm özellikleri kapsadığ
 - Gerçek kullanıcı verileri ve kişisel bilgiler ekran görüntülerinde paylaşılmamalıdır.
 - Örnek yapılandırmalar kullanılırken gerçek proje kimlik bilgileri korunmalıdır.
 
-## Geliştirme Alanları
-
-Projenin ilerleyen sürümlerinde değerlendirilebilecek geliştirmeler:
-
-- Otomatik test kapsamının artırılması.
-- Daha ayrıntılı hata yönetimi ve kullanıcı geri bildirimleri.
-- Bildirimlerin farklı cihazlarda ve Android sürümlerinde kapsamlı test edilmesi.
-- Erişilebilirlik ve farklı ekran boyutları için arayüz iyileştirmeleri.
-- CI/CD süreçlerinin ve otomatik derleme kontrollerinin eklenmesi.
-
-Bunlar mevcut sürümde tamamlanmış özellikler değil, olası geliştirme alanlarıdır.
-
-
 
 ---
 
@@ -315,7 +281,7 @@ The project focuses on both user-facing features and application engineering pra
 Clone the repository:
 
 ```bash
-git clone https://github.com/USERNAME/FlowState.git
+git clone https://github.com/nilsukonak/FlowState.git
 cd FlowState
 ```
 
